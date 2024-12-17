@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/main.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          letterSpacing: {
+            "more-space": "1.4rem",
+            "p-space": "1rem",
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              lightMint: "#C8ECE9",
+              smaragdGreen: "#21B2A6",
+              lavender: "#505393",
+            },
+            fontSize: {
+              "meine-größe": "7rem",
+            },
+            lineHeight: {
+              "extra-loose": "184.21%",
+              "p-height": "165%",
+            },
+            margin: {
+              leftRight: "1.2em",
+            },
+            padding: {
+              leftRight: "13.3vw",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style type="text/tailwindcss">
+      @layer base {
+        @font-face {
+          font-family: "OpenSans";
+          src: url("./assets/fonts/Open_Sans/OpenSans-VariableFont.ttf");
+        }
+        html {
+          @apply font-["OpenSans"];
+        }
+        h3 {
+          @apply text-lg text-center;
+        }
+        h2 {
+          @apply uppercase text-2xl font-extrabold tracking-[.4rem];
+        }
+        p {
+          @apply text-base pb-16;
+        }
+      }
+    </style>
+
+    <title>Project Wanderlust Adventure</title>
+  </head>
+  <body>
+    <header
+      class="h-screen bg-[url(./assets/img/header.png)] bg-no-repeat bg-cover bg-center text-white"
+    >
+      <nav class="mx-14 py-2">
+        <a href="" class="flex justify-end uppercase">Menu</a>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+      <div class="flex flex-col justify-center items-center h-screen">
+        <h1
+          class="text-3xl border-y-2 border-white inline leading-[184%] px-4 font-bold py-2 uppercase tracking-more-space mb-11"
+        >
+          Wanderlust Adventures
+        </h1>
+        <h3 class="uppercase w-1/4 tracking-widest mb-9">
+          A fine template for a travel agency with responsive focus
+        </h3>
+        <button
+          class="btn bg-red-600 border-0 text-white px-12 uppercase tracking-[.4rem]"
+        >
+          Lets Go
+        </button>
+      </div>
+    </header>
+    <main>
+      <section
+        class="bg-smaragdGreen h-4/5 px-leftRight py-28 text-white text-center flex flex-col"
+      >
+        <h2 class="">
+          „Not all those who wander are lost.“ – J.R.R. Tolkien
+          <div class="border-t-2 border-lightMint my-6"></div>
+        </h2>
+
+        <p class="leading-p-heigt tracking-[.12rem]">
+          Are you ready to embark on the journey of a lifetime? At Wanderlust
+          Adventures, we specialize in curating unforgettable travel experiences
+          tailored to your unique desires. Whether you're seeking a tranquil
+          beach getaway, an exhilarating adventure in the mountains, or a
+          culturally enriching city tour, we've got you covered. So, what are
+          you waiting for? Unleash your wanderlust and let us transform your
+          dreams into reality.
+        </p>
+        <article class="flex justify-center gap-16">
+          <div><img src="./assets/img/.png" alt="kompass" /></div>
+          <div><img src="./assets/img/icon2.png" alt="karte" /></div>
+          <div><img src="./assets/img/icon3.png" alt="route" /></div>
+        </article>
+      </section>
+      <section class="flex bg-gray-800 text-white justify-center items-center">
+        <img src="./assets/img/section1.png" alt="" />
+        <article class="mx-24">
+          <h2 class="my-6">Colombia <br />- vibrant latinamerica</h2>
+          <p class="leading-p-heigt tracking-[.12rem]">
+            Experience the vibrant beauty of Colombia. From the lush coffee
+            plantations to the colonial charm of Cartagena, this country offers
+            captivating landscapes and rich cultural experiences. Explore
+            Tayrona National Park's pristine beaches, wander through the Cocora
+            Valley's towering palm trees, and immerse yourself in the flavors of
+            Colombian cuisine. Unforgettable adventures await in this enchanting
+            South American destination.
+          </p>
+        </article>
+      </section>
+      <section class="flex bg-gray-900 text-white justify-center items-center">
+        <article class="mx-24">
+          <h2 class="my-6">Paris <br />- pure elegance</h2>
+          <p>
+            Experience the timeless allure of Paris, the City of Lights. Stroll
+            along the romantic Seine River, marvel at the iconic Eiffel Tower,
+            and indulge in delectable French cuisine. From world-class art to
+            charming cafes, Paris offers an enchanting blend of history and
+            sophistication.
+          </p>
+        </article>
+        <img src="./assets/img/section2.png" alt="" />
+      </section>
+      <section class="flex bg-gray-700 text-white justify-center items-center">
+        <img src="./assets/img/section3.png" alt="" />
+        <article class="mx-24">
+          <h2 class="my-6">Hungary <br />- unknown beauty</h2>
+          <p class="leading-p-heigt tracking-[.12rem]">
+            Discover the hidden gems of Hungary, a land of rich history and
+            breathtaking landscapes. Explore the stunning architecture of
+            Budapest, soak in the healing waters of thermal baths, and indulge
+            in traditional Hungarian cuisine. From charming villages to
+            enchanting castles, Hungary will captivate your heart.
+          </p>
+        </article>
+      </section>
+
+      <section class="bg-lavender text-white py-24 px-48 text-center">
+        <h2 class="border-b-2 border-purple-950 mb-6 inline-block py-7">
+          Our promise
+        </h2>
+
+        <p class="leading-p-heigt tracking-[.12rem]">
+          At Wanderlust Adventures, we understand that every traveler is unique,
+          and that's why we offer personalized itineraries. Our team of expert
+          travel consultants will work closely with you to understand your
+          preferences, interests, and budget, crafting a tailor-made trip that
+          exceeds your expectations.
+        </p>
+        <div>
+          <article class="flex">
+            <div class="p-20 text-left w-1/2">
+              <h2 class="pb-5">Personalized Itineraries</h2>
+              <p class="leading-p-heigt tracking-[.12rem]">
+                Our travel agency specializes in crafting customized itineraries
+                tailored to your preferences, ensuring that every aspect of your
+                journey is personalized to create a truly unique and
+                unforgettable experience.
+              </p>
+            </div>
+            <div class="p-20 text-left border w-1/2">
+              <h2 class="pb-5">Expert Destination Knowledge</h2>
+              <p class="leading-p-heigt tracking-[.12rem]">
+                With our team of experienced travel consultants, we have
+                in-depth knowledge of various destinations worldwide. From
+                popular tourist spots to hidden gems, we provide expert guidance
+                to help you choose the perfect destination that matches your
+                interests and desires.
+              </p>
+            </div>
+          </article>
+
+          <article class="flex">
+            <div class="p-20 text-left border w-1/2">
+              <h2 class="pb-5">Hassle-free Planning</h2>
+              <p class="leading-p-heigt tracking-[.12rem]">
+                Leave the logistics to us. Our travel agency takes care of all
+                the arrangements, including flights, accommodations,
+                transportation, and activities, so you can relax and focus on
+                enjoying your trip without the stress of planning and
+                organizing.
+              </p>
+            </div>
+            <div class="p-20 text-left w-1/2">
+              <h2 class="pb-5">Exclusive Deals and Packages</h2>
+              <p class="leading-p-heigt tracking-[.12rem]">
+                We offer a wide range of exclusive deals and packages that
+                provide exceptional value for your money. From discounted
+                airfare to special hotel rates and unique experiences, we strive
+                to make your travel dreams affordable and accessible.
+              </p>
+            </div>
+          </article>
+
+          <article class="flex">
+            <div class="p-20 text-left w-1/2">
+              <h2 class="pb-5">24/7 Customer Support</h2>
+              <p class="leading-p-heigt tracking-[.12rem]">
+                Our dedicated customer support team is available round-the-clock
+                to assist you during your travels. Whether you need help with
+                last- minute changes, have questions, or require any assistance,
+                we are just a phone call or email away.
+              </p>
+            </div>
+            <div class="p-20 text-left w-1/2 border">
+              <h2 class="pb-5">Safety and Security</h2>
+              <p class="leading-p-heigt tracking-[.12rem]">
+                Your safety is our utmost priority. We partner with reputable
+                airlines, trusted accommodation providers, and reliable local
+                operators to ensure that your travel experience is not only
+                enjoyable but also secure. We carefully monitor travel
+                advisories and provide guidance to ensure a worry-free journey.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        class="flex bg-[url(./assets/img/footer.png)] bg-center bg-no-repeat bg-cover h-2/5"
+      >
+        <article class="p-leftRight">
+          <h2>Contact us</h2>
+          <p>
+            So, what are you waiting for? Unleash your wanderlust and let us
+            transform your dreams into reality. Contact us today, and let's
+            embark on an extraordinary journey together. Wanderlust Adventures -
+            where extraordinary memories are made.
+          </p>
+        </article>
+        <button
+          class="btn bg-red-600 border-0 text-white px-12 uppercase tracking-[.4rem]"
+        >
+          Contact us
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
